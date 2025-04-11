@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvRating"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp8"
+    android:layout_marginTop="@dimen/dp12"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="@dimen/dp20"
+    app:contentPaddingBottom="@dimen/dp3"
+    app:contentPaddingLeft="@dimen/dp10"
+    app:contentPaddingRight="@dimen/dp8"
+    app:contentPaddingTop="@dimen/dp3"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0"
+    app:layout_constraintStart_toEndOf="@+id/cvDuration"
+    app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvVoteAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp3"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:id="@+id/ivClear"
+            android:layout_width="@dimen/dp16"
+            android:layout_height="@dimen/dp16"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/tvVoteAverage"
+            android:src="@drawable/ic_rating_star" />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

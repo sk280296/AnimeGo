@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AnimeGo" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/color_6D6262</item>
+    </style>
+
+    <style name="Theme.AnimeGo" parent="Base.Theme.AnimeGo" />
+
+</resources>

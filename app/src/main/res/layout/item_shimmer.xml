@@ -1,0 +1,65 @@
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp8"
+    app:layout_constraintTop_toTopOf="@id/rvMovieList"
+    app:shimmer_auto_start="true"
+    app:shimmer_duration="1500">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10">
+
+        <View
+            android:id="@+id/shimmerPosterImage"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp100"
+            android:layout_marginEnd="@dimen/dp16"
+            android:background="@color/color_E0E0E0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/shimmerMovieTitle"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginStart="@dimen/dp8"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp4"
+            android:background="@color/color_E0E0E0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/shimmerPosterImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/shimmerReleaseYear"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="@dimen/dp16"
+            android:layout_marginStart="@dimen/dp8"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@color/color_E0E0E0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/shimmerPosterImage"
+            app:layout_constraintTop_toBottomOf="@id/shimmerMovieTitle" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="@dimen/dp45"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginStart="@dimen/dp8"
+            android:layout_marginTop="@dimen/dp10"
+            app:cardBackgroundColor="@color/color_E0E0E0"
+            app:cardCornerRadius="@dimen/dp20"
+            app:contentPaddingBottom="@dimen/dp3"
+            app:contentPaddingLeft="@dimen/dp10"
+            app:contentPaddingRight="@dimen/dp8"
+            app:contentPaddingTop="@dimen/dp3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/shimmerPosterImage"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerReleaseYear" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.facebook.shimmer.ShimmerFrameLayout>

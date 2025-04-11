@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/topAnimeFragment">
+
+    <fragment
+        android:id="@+id/topAnimeFragment"
+        android:name="com.app.animego.view.ui.TopAnimeFragment"
+        android:label=""
+        app:launchSingleTop="true">
+        <action
+            android:id="@+id/action_topAnimeFragment_to_animeDetailFragment"
+            app:destination="@id/animeDetailFragment"
+            app:popUpTo="@id/topAnimeFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/animeDetailFragment"
+        android:name="com.app.animego.view.ui.AnimeDetailFragment"
+        android:label=""
+        app:launchSingleTop="true">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+</navigation>

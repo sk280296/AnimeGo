@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AnimeGo</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="no_overview_available">No overview available</string>
+    <string name="overview">Overview</string>
+    <string name="a_way_to_experience">A way to experience</string>
+    <string name="episode">Episode</string>
+    <string name="episodes">Episodes</string>
+    <string name="cast">Cast</string>
+
+</resources>
